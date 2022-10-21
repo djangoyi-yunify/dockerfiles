@@ -1,0 +1,5 @@
+FROM nosqlpass/opensearch:2.2.1
+
+WORKDIR /usr/share/opensearch
+
+COPY --chown=1000:1000 config.yml config/opensearch-security
