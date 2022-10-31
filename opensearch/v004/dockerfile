@@ -1,0 +1,5 @@
+FROM djangoyi/opensearch:2.3.0
+
+WORKDIR /usr/share/opensearch
+
+COPY --chown=1000:1000 config.yml config/opensearch-security
